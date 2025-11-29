@@ -215,8 +215,8 @@
   </script>
 
   <!-- Preload critical assets -->
-  <link rel="preload" href="/assets/video-hero-DoATT0HB.mp4" as="video" type="video/mp4">
-  <link rel="preload" href="/assets/video-poster-nnPF48n7.jpg" as="image">
+  <link rel="preload" href="/assets/video-poster-nnPF48n7.jpg" as="image" fetchpriority="high">
+  <link rel="preload" href="/assets/new-logo-optimized.webp" as="image" type="image/webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -359,7 +359,10 @@
       </video>
       <div class="hero-overlay"></div>
       <div class="hero-logo">
-        <img src="/assets/new-logo.png" alt="Santa Maria Blumen" class="hero-logo-image">
+        <picture>
+          <source srcset="/assets/new-logo-optimized.webp" type="image/webp">
+          <img src="/assets/new-logo-optimized.png" alt="Santa Maria Blumen" class="hero-logo-image" width="600" height="629" fetchpriority="high">
+        </picture>
       </div>
       <div class="hero-content">
         <span class="hero-tagline" data-i18n="heroTagline">Ihr Premium Florist seit 2006</span>
@@ -826,7 +829,8 @@
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Standort von Santa Maria Blumen auf Google Maps">
           </iframe>
         </div>
       </div>
