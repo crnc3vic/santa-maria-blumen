@@ -1,0 +1,21 @@
+node_modules
+.DS_Store
+*.log
+.env
+.env.local
+
+# Internal documents - not for public repo
+konzept-praesentation/
+content_from_client/
+exported_content/
+*.pdf
+new-logo.png
+index.html
+
+# Private deployment config (contains server IPs)
+docker/
+
+# Local IDE settings
+.claude/
+.vscode/
+.idea/

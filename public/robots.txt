@@ -1,0 +1,11 @@
+# Robots.txt for Santa Maria Blumen
+# https://www.santa-maria-blumen.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.santa-maria-blumen.com/sitemap.xml
+
+# Disallow admin or private areas (none currently)
+# Disallow: /admin/
